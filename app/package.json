@@ -1,7 +1,7 @@
 {
   "name": "headless-e2e",
   "description": "End2end testing with Google Chrome headless",
-  "author": "Daniel Koch <daniel@suitsoft.eu",
+  "author": "Daniel Koch <daniel@suitsoft.eu>",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
