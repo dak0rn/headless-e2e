@@ -1,0 +1,41 @@
+{
+    "src_folders": [
+        "tests"
+    ],
+    "output_folder": "reports",
+    "custom_commands_path": "commands",
+    "selenium": {
+        "start_process": true,
+        "server_path": "/selenium.jar",
+        "log_path": "",
+        "port": 9876,
+        "cli_args": {
+            "webdriver.chrome.driver": "/chromedriver"
+        }
+    },
+    "test_settings": {
+        "default": {
+            "launch_url": "https://example.com",
+            "selenium_port": 9876,
+            "selenium_host": "localhost",
+            "silent": true,
+            "screenshots": {
+                "enabled": false,
+                "path": "/app/screenshots",
+                "on_error": true,
+                "on_failure": true
+            },
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "chromeOptions": {
+                    "args": [
+                        "--headless",
+                        "--no-sandbox",
+                        "window-size=1440,900"
+                    ]
+                },
+                "acceptSslCerts": true
+            }
+        }
+    }
+}

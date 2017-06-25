@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: ./app
+    volumes:
+      - './app:/app'
+    ports:
+      - '9876:9876'
+    cap_add:
+      - SYS_ADMIN
